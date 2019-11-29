@@ -13,19 +13,31 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1TvBxar6iEfVK5FqgjHBVJKInoh" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Exercice Dates" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ICT-133\ExerciceArrays" />
       <recent name="C:\ICT-133\Exercice Traduction" />
     </key>
   </component>
@@ -42,13 +54,16 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.Exercice Traduction">
-    <configuration name="Exercice Traduction" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/Exercice Dates" port="8081">
+    <configuration name="Exercice Traduction" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8081">
       <method v="2" />
     </configuration>
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/Exercice Traduction" port="8081">
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ExerciceTraduction/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ExercicePuissance4/index.php">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.grunt">
@@ -59,9 +74,11 @@
     <list>
       <item itemvalue="PHP Built-in Web Server.Exercice Traduction" />
       <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHP Script.index.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.index.php" />
       </list>
     </recent_temporary>
@@ -78,6 +95,11 @@
       <updated>1574330935570</updated>
       <workItem from="1574330936681" duration="2038000" />
       <workItem from="1574333000764" duration="1849000" />
+      <workItem from="1574931324914" duration="3845000" />
+      <workItem from="1574938710864" duration="850000" />
+      <workItem from="1575031017444" duration="23000" />
+      <workItem from="1575032246954" duration="1801000" />
+      <workItem from="1575034106592" duration="2087000" />
     </task>
     <servers />
   </component>

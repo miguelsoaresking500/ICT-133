@@ -1,0 +1,1 @@
+addEventListener($i,click)
