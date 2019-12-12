@@ -16,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,12 +31,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Temp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ICT-133\Temp" />
       <recent name="C:\ICT-133\ExerciceArrays" />
       <recent name="C:\ICT-133\Exercice Traduction" />
     </key>
@@ -60,6 +61,9 @@
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/Exercice Traduction" port="8081">
       <method v="2" />
     </configuration>
+    <configuration name="index.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ExerciceCalendrier/index.php">
+      <method v="2" />
+    </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ExerciceTraduction/index.php">
       <method v="2" />
     </configuration>
@@ -74,10 +78,11 @@
     <list>
       <item itemvalue="PHP Built-in Web Server.Exercice Traduction" />
       <item itemvalue="PHP Script.index.php" />
-      <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHP Script.index.php (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php (1)" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.index.php" />
       </list>
@@ -100,6 +105,9 @@
       <workItem from="1575031017444" duration="23000" />
       <workItem from="1575032246954" duration="1801000" />
       <workItem from="1575034106592" duration="2087000" />
+      <workItem from="1575537670299" duration="6078000" />
+      <workItem from="1575636030560" duration="4630000" />
+      <workItem from="1576142474489" duration="6105000" />
     </task>
     <servers />
   </component>

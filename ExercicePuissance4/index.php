@@ -29,6 +29,7 @@
      * Date: 29.11.2019
      * Time: 14:29
      */
+
     for ($line = 0; $line < 8; $line++) {
         echo("<tr>");
         for ($col = 0; $col < 8; $col++) {

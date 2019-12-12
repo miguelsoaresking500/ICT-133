@@ -41,7 +41,10 @@ echo "<li><a href=\"ExerciceDates/index.php\">ExoDate</a></li>";
 echo "<li><a href=\"ExerciceTraduction/index.php\">ExoTraduction</a></li>";
 echo "<li><a href=\"ExerciceBoucleNom/index.php\">ExoBoucle</a></li>";
 echo "<li><a href=\"ExercicePuissance4/index.php\">ExoPuissance4</a></li>";
-echo "<li><a href=\"temp.html\">Temp</a></li>";
+echo "<li><a href=\"ExerciceCalendrier/index.php\">ExoCalendrier</a></li>";
+echo "<li><a href=\"ExerciceGabarit/classe.php\">ExoGabarit</a></li>";
+echo "<li><a href=\"Temp/index.php\">Temp</a></li>";
+
 echo "</ol>";
 ?>
 
