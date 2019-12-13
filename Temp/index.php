@@ -15,7 +15,7 @@ if ($timestamp === false) {
     $timestamp = strtotime($ym . '-01');
 }
 // Today (Format:2018-08-8)
-$today = date('Y-m-j');
+$today = date('j');
 // Title (Format:August, 2018)
 $title = date('F, Y', $timestamp);
 // Create prev & next month link
@@ -25,30 +25,9 @@ $next = date('Y-m', strtotime('+1 month', $timestamp));
 $day_count = date('t', $timestamp);
 // 1:Mon 2:Tue 3: Wed ... 7:Sun
 $str = date('N', $timestamp);
-// Array for calendar
-$weeks = [];
-$week = '';
-// Add empty cell(s)
-$week .= str_repeat('<td></td>', $str - 1);
-for ($day = 1; $day <= $day_count; $day++, $str++) {
-    $date = $ym . '-' . $day;
-    if ($today == $date) {
-        $week .= '<td class="weekdays">';
-    } else {
-        $week .= '<td>';
-    }
-    $week .= $day . '</td>';
-    // Sunday OR last day of the month
-    if ($str % 7 == 0 || $day == $day_count) {
-        // last day of the month
-        if ($day == $day_count && $str % 7 != 0) {
-            // Add empty cell(s)
-            $week .= str_repeat('<td></td>', 7 - $str % 7);
-        }
-        $weeks[] = '<tr>' . $week . '</tr>';
-        $week = '';
-    }
-}
+;
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,13 +38,13 @@ for ($day = 1; $day <= $day_count; $day++, $str++) {
 
 </head>
 <body>
-<div class="container">
+<div class="month">
     <ul class="list-inline">
         <li class="list-inline-item"><a href="?ym=<?= $prev; ?>" class="btn btn-link">&lt;</a></li>
         <li class="list-inline-item"><span class="title"><?= $title; ?></span></li>
         <li class="list-inline-item"><a href="?ym=<?= $next; ?>" class="btn btn-link">></a></li>
     </ul>
-
+</div>
         <ul class="weekdays">
             <?php
             $sem = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
@@ -75,14 +54,24 @@ for ($day = 1; $day <= $day_count; $day++, $str++) {
             ?>
 
         </ul>
-        <tbody>
-        <?php
-        foreach ($weeks as $week) {
-            echo $week;
+    <?php
+
+
+    echo "<ul class='days'>";
+
+
+    for ($i = 1; $i <= $day_count; $i++) {
+        if ($i == $today) {
+            echo "<li> <span class=\"active\">$i</span></li>";
+        } else {
+            echo "<li>$i</li>";
         }
-        ?>
-        </tbody>
-    </table>
-</div>
+    }
+
+    echo "</ul>"
+    ?>
+
+
+
 </body>
 </html>
