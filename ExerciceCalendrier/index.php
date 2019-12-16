@@ -31,6 +31,27 @@ $prevmonth = date( 'N', date('Y-m', strtotime('-1 month', $timestamp)));
 $nextmonth = date( 'N', date('Y-m', strtotime('+1 month', $timestamp)));
 $nbmonthcurrent=date("m", strtotime("this month"));
 
+function contenu($day_count, $prevmonth,$today,$nextmonth){
+    echo "<ul class='days'>";
+
+    for($i=$day_count - $prevmonth-2; $i <=$day_count-1;$i++  ) {
+        echo "<li class='daysplus'>$i</li>";
+
+    }
+    for ($i = 1; $i <= $day_count; $i++) {
+        if ($i == $today) {
+            echo "<li> <span class=\"active\">$i</span></li>";
+        } else {
+            echo "<li>$i</li>";
+        }
+    }
+    for($i=1 ; $i <= $nextmonth+1;$i++  ) {
+        echo "<li class='daysplus'>$i</li>";
+
+    }
+
+    echo "</ul>";
+}
 
 
 ?>
@@ -40,6 +61,7 @@ $nbmonthcurrent=date("m", strtotime("this month"));
     <meta charset="utf-8">
     <title>PHP Calendar</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
 </head>
 <body>
@@ -61,26 +83,10 @@ $nbmonthcurrent=date("m", strtotime("this month"));
 </ul>
 <?php
 
+contenu($day_count, $prevmonth,$today,$nextmonth);
 
-echo "<ul class='days'>";
 
-for($i=$day_count - $prevmonth-2; $i <=$day_count-1;$i++  ) {
-    echo "<li>$i</li>";
 
-}
-for ($i = 1; $i <= $day_count; $i++) {
-    if ($i == $today) {
-        echo "<li> <span class=\"active\">$i</span></li>";
-    } else {
-        echo "<li>$i</li>";
-    }
-}
-for($i=1 ; $i <= $nextmonth+1;$i++  ) {
-    echo "<li>$i</li>";
-
-}
-
-echo "</ul>";
 
 ?>
 

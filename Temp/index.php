@@ -64,7 +64,7 @@ $str = date('N', $timestamp);
         if ($i == $today) {
             echo "<li> <span class=\"active\">$i</span></li>";
         } else {
-            echo "<li>$i</li>";
+            echo "<li class='daysplus'>$i</li>";
         }
     }
 
