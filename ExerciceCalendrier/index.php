@@ -7,6 +7,7 @@ if (isset($_GET['ym'])) {
 } else {
     // This month
     $ym = date('Y-m');
+    $yd = date('Y-m');
 }
 // Check format
 $timestamp = strtotime($ym . '-01');  // the first day of the month
@@ -14,7 +15,7 @@ if ($timestamp === false) {
     $ym = date('Y-m');
     $timestamp = strtotime($ym . '-01');
 }
-$month = date('m');
+$month = date('m',$timestamp);
 
 // Today (Format:2018-08-8)
 $today = date('j');
@@ -31,7 +32,7 @@ $prevmonth = date( 'N', date('Y-m', strtotime('-1 month', $timestamp)));
 $nextmonth = date( 'N', date('Y-m', strtotime('+1 month', $timestamp)));
 $nbmonthcurrent=date("m", strtotime("this month"));
 
-function contenu($day_count, $prevmonth,$today,$nextmonth){
+function contenu($day_count, $prevmonth,$today,$nextmonth,$nbmonthcurrent,$month){
     echo "<ul class='days'>";
 
     for($i=$day_count - $prevmonth-2; $i <=$day_count-1;$i++  ) {
@@ -39,8 +40,8 @@ function contenu($day_count, $prevmonth,$today,$nextmonth){
 
     }
     for ($i = 1; $i <= $day_count; $i++) {
-        if ($i == $today) {
-            echo "<li> <span class=\"active\">$i</span></li>";
+        if ($i == $today && $nbmonthcurrent == $month) {
+            echo "<li> <span class='active'>$i</span></li>";
         } else {
             echo "<li>$i</li>";
         }
@@ -48,9 +49,20 @@ function contenu($day_count, $prevmonth,$today,$nextmonth){
     for($i=1 ; $i <= $nextmonth+1;$i++  ) {
         echo "<li class='daysplus'>$i</li>";
 
+
+
     }
 
     echo "</ul>";
+
+}
+
+function titre($title){
+
+    echo "<li class='list-inline-item'><span class='title' href='$title'>$title</span></li>";
+
+
+
 }
 
 
@@ -68,8 +80,12 @@ function contenu($day_count, $prevmonth,$today,$nextmonth){
 <div class="month">
     <ul class="list-inline">
         <li class="list-inline-item"><a href="?ym=<?= $prev; ?>" class="btn btn-link">&lt;</a></li>
-        <li class="list-inline-item"><span class="title"><?= $title; ?></span></li>
+        <?php
+        titre($title);
+        ?>
         <li class="list-inline-item"><a href="?ym=<?= $next; ?>" class="btn btn-link">></a></li>
+
+
     </ul>
 </div>
 <ul class="weekdays">
@@ -83,7 +99,7 @@ function contenu($day_count, $prevmonth,$today,$nextmonth){
 </ul>
 <?php
 
-contenu($day_count, $prevmonth,$today,$nextmonth);
+contenu($day_count, $prevmonth,$today,$nextmonth,$nbmonthcurrent,$month);
 
 
 
