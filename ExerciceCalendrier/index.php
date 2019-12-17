@@ -17,9 +17,9 @@ if ($timestamp === false) {
 }
 $month = date('m',$timestamp);
 
-// Today (Format:2018-08-8)
+// Today
 $today = date('j');
-// Title (Format:August, 2018)
+// Title
 $title = date('F, Y', $timestamp);
 // Create prev & next month link
 $prev = date('Y-m', strtotime('-1 month', $timestamp));
@@ -35,15 +35,15 @@ $nbmonthcurrent=date("m", strtotime("this month"));
 function contenu($day_count, $prevmonth,$today,$nextmonth,$nbmonthcurrent,$month){
     echo "<ul class='days'>";
 
-    for($i=$day_count - $prevmonth-2; $i <=$day_count-1;$i++  ) {
+    for($i=$day_count - $prevmonth-1; $i <=$day_count;$i++  ) {
         echo "<li class='daysplus'>$i</li>";
 
     }
-    for ($i = 1; $i <= $day_count; $i++) {
+    for ($i = 1; $i != date("t", $day_count) + 1; $i++) { // Affichier les jours du mois accutel
         if ($i == $today && $nbmonthcurrent == $month) {
-            echo "<li> <span class='active'>$i</span></li>";
+            echo("<li><span class='active'>$i</span></li>");
         } else {
-            echo "<li>$i</li>";
+            echo("<li>$i</li>");
         }
     }
     for($i=1 ; $i <= $nextmonth+1;$i++  ) {
@@ -59,7 +59,7 @@ function contenu($day_count, $prevmonth,$today,$nextmonth,$nbmonthcurrent,$month
 
 function titre($title){
 
-    echo "<li class='list-inline-item'><span class='title' href='$title'>$title</span></li>";
+    echo "<li class='list-inline-item'><span class='title' >$title</span></li>";
 
 
 
