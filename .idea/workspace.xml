@@ -33,6 +33,7 @@
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Temp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
@@ -120,6 +121,7 @@
       <workItem from="1576574654363" duration="1342000" />
       <workItem from="1576576063085" duration="293000" />
       <workItem from="1576747129223" duration="6690000" />
+      <workItem from="1576845342853" duration="5208000" />
     </task>
     <servers />
   </component>

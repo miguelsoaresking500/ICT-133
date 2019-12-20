@@ -1,14 +1,6 @@
 <?php
 ob_start();
-$movies = [
-    ['title' => 'Jumanji: Next Level', 'audio' => 'Doublé en français', 'showtime' => '18:00'],
-    ['title' => 'La Reine des neiges 2', 'audio' => 'Doublé en français', 'showtime' => '15:30'],
-    ['title' => 'Last Christmas', 'audio' => 'Standard', 'showtime' => '21:00'],
-    ['title' => 'La Famille Addams', 'audio' => 'Standard', 'showtime' => '15:30'],
-    ['title' => 'Le Meilleur reste à venir', 'audio' => 'Doublé en français', 'showtime' => '15:50'],
-    ['title' => 'À couteaux tirés', 'audio' => 'Standard', 'showtime' => '18:10'],
-    ['title' => 'Joker', 'audio' => 'Doublé en français', 'showtime' => '20:45']
-];
+
 
 $tab = [ 'title','audio','showtime']
 
@@ -16,9 +8,9 @@ $tab = [ 'title','audio','showtime']
 
 ?>
     <h1>Il y a <?=count($movies)?> films</h1>
-    <a  class='navbar-dark' href='http://localhost:8081/MVC/?action=home'>Home</a>
-    <a  class='nav-item navbar-dark' href='http://localhost:8081/MVC/?action=concerts'>Concert</a>
-<table class="table table-striped">
+    <a  class='btn  btn-secondary' href='http://localhost:8081/MVC/?action=home'>Home</a>
+    <a  class='btn  btn-secondary' href='http://localhost:8081/MVC/?action=concerts'>Concert</a>
+<table class="table table-striped table-dark">
 
 <?php
 foreach ($tab as $tabs ){
@@ -44,5 +36,6 @@ foreach ($movies as $movie ){
  * Time: 10:53
  */
 $content = ob_get_clean();
+require_once 'gabarit.php';
 
 ?>

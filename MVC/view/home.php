@@ -5,7 +5,7 @@ ob_start();
 <nav>
     <a  class='nav-item' href='http://localhost:8081/MVC/?action=movies'><img src="images/movies.jpg" height="250px">
     </a>
-    <a  class='nav-item' href='http://localhost:8081/MVC/?action=concerts'><img src="images/concerts.jpg"  height="250px"></a>
+    <a  class='nav-item' href='http://localhost:8081/MVC/?action=concerts'><img src="images/concerts.jpg" height="250px"></a>
 </nav>
 <?php
 /**
@@ -15,5 +15,6 @@ ob_start();
  * Time: 10:53
  */
 $content = ob_get_clean();
+require_once 'gabarit.php';
 
 ?>

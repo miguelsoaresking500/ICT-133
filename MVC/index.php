@@ -1,14 +1,15 @@
 <?php
+require_once 'controller/controller.php';
 $action = $_GET['action'];
 switch ($action){
     case 'movies':
         $title = 'Films';
-        require_once 'view/movies.php';
+        showMovies();
         break;
 
     case 'concerts':
         $title = 'Concerts';
-        require_once 'view/concerts.php';
+        showConcerts();
         break;
 
     default:
@@ -18,5 +19,4 @@ switch ($action){
 
 }
 
-require_once 'gabarit.php';
 ?>
