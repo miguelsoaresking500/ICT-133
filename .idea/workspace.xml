@@ -27,11 +27,12 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1TvBxar6iEfVK5FqgjHBVJKInoh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Temp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ICT-133-RentASnow" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -56,7 +57,7 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.Exercice Traduction">
-    <configuration name="Exercice Traduction" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8081">
+    <configuration name="Exercice Traduction" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/ICT-133-RentASnow" port="8081">
       <method v="2" />
     </configuration>
     <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/Exercice Traduction" port="8081">
@@ -122,6 +123,8 @@
       <workItem from="1576576063085" duration="293000" />
       <workItem from="1576747129223" duration="6690000" />
       <workItem from="1576845342853" duration="5208000" />
+      <workItem from="1578563147785" duration="801000" />
+      <workItem from="1578564282816" duration="6000" />
     </task>
     <servers />
   </component>
